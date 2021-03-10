@@ -1,0 +1,23 @@
+urxvt.font: xft:Iosevka:style=Regular:size=12
+urxvt.boldFont: xft:Iosevka:style=Bold:size=12
+urxvt.italicFont: xft:Iosevka:style=Italic:size=12
+urxvt.boldItalicFont: xft:Iosevka:style=Bold Italic:size=12
+
+
+URxvt.depth: 24
+URxvt.letterSpace:	0
+URxvt.scrollBar: 	false
+URxvt.depth:		32
+URxvt.scrollBar_right:	false
+URxvt.lineSpace:	0
+URxvt.transparent:	true
+urxvt.background:	#000000
+urxvt.foreground:	#fafafa
+URxvt*shading: 		50
+URxvt*borderColor: 	#fafafa
+URxvt.internalBorder:	24
+URxvt*fading:		30
+URxvt*colorUL:		yellow
+URxvt*underlineColor:	yellow
+URxvt*cursorBlink:	true
+
