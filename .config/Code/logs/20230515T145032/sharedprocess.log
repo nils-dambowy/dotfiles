@@ -1,0 +1,14 @@
+2023-05-15 14:50:44.786 [info] Getting Manifest... ms-python.python
+2023-05-15 14:50:44.987 [info] Installing extension: ms-python.python
+2023-05-15 14:50:46.093 [info] Getting Manifest... ms-python.vscode-pylance
+2023-05-15 14:50:46.342 [info] Installing extension: ms-python.vscode-pylance ms-python.python
+2023-05-15 14:50:47.435 [warning] Extension signature verification failed with error 'UnknownError': ms-python.python
+2023-05-15 14:50:54.270 [info] Extracted extension to /home/nils/.vscode/extensions/.7e966720-0e45-4571-b00d-f3557e748249: ms-python.python
+2023-05-15 14:50:54.282 [info] Renamed to /home/nils/.vscode/extensions/ms-python.python-2023.8.0
+2023-05-15 14:50:54.297 [info] Extracting extension completed. ms-python.python
+2023-05-15 14:50:55.160 [warning] Extension signature verification failed with error 'UnknownError': ms-python.vscode-pylance
+2023-05-15 14:51:03.481 [info] Extracted extension to /home/nils/.vscode/extensions/.13f438cf-b7ca-4f1a-ab79-03e92a1b8f77: ms-python.vscode-pylance
+2023-05-15 14:51:03.491 [info] Renamed to /home/nils/.vscode/extensions/ms-python.vscode-pylance-2023.5.20
+2023-05-15 14:51:03.497 [info] Extracting extension completed. ms-python.vscode-pylance
+2023-05-15 14:51:03.514 [info] Extension installed successfully: ms-python.python
+2023-05-15 14:51:03.514 [info] Extension installed successfully: ms-python.vscode-pylance

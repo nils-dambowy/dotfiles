@@ -1,0 +1,16 @@
+2023-05-15 15:03:11.038 [info] Log level: Info
+2023-05-15 15:03:11.038 [info] Validating found git in: "git"
+2023-05-15 15:03:11.038 [info] Using git "2.40.1" from "git"
+2023-05-15 15:03:11.038 [info] > git rev-parse --show-toplevel [9ms]
+2023-05-15 15:03:11.047 [info] > git rev-parse --git-dir --git-common-dir [3ms]
+2023-05-15 15:03:11.070 [info] Open repository: /home/nils/Documents/GitHub/Machine-Learning
+2023-05-15 15:03:11.101 [info] > git config --get commit.template [7ms]
+2023-05-15 15:03:11.112 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2023-05-15 15:03:11.126 [info] > git status -z -uall [3ms]
+2023-05-15 15:03:11.157 [info] > git config --get commit.template [5ms]
+2023-05-15 15:03:11.180 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2023-05-15 15:03:11.200 [info] > git status -z -uall [3ms]
+2023-05-15 15:03:11.637 [info] > git check-ignore -v -z --stdin [10ms]
+2023-05-15 15:03:12.992 [info] > git show --textconv :sgd.py [18ms]
+2023-05-15 15:03:12.998 [info] > git ls-files --stage -- /home/nils/Documents/GitHub/Machine-Learning/sgd.py [10ms]
+2023-05-15 15:03:13.022 [info] > git cat-file -s 5c2fe3f2db61acf2c14774ef71dd81b6fa77bc9b [3ms]

@@ -1,0 +1,10 @@
+2023-05-15 15:03:13.265 [info] Experiment 'pythonPromptNewFormatterExt' is active
+2023-05-15 15:03:13.265 [info] Experiment 'pythonPromptNewToolsExt' is active
+2023-05-15 15:03:13.265 [info] Test server listening.
+2023-05-15 15:03:13.265 [info] Python interpreter path: /bin/python
+2023-05-15 15:03:13.602 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-05-15 15:03:13.602 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-05-15 15:03:13.621 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-05-15 15:03:13.621 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-05-15 15:03:14.733 [info] Starting Pylance language server.
+2023-05-15 15:03:24.357 [info] Send text to terminal: /bin/python /home/nils/Documents/GitHub/Machine-Learning/sgd.py

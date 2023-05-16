@@ -1,0 +1,3 @@
+2023-05-15 13:23:08.544 [info] Started initializing default profile extensions in extensions installation folder. file:///home/nils/.vscode/extensions
+2023-05-15 13:23:08.937 [warning] Failed to create default profile extensions manifest in extensions installation folder. file:///home/nils/.vscode/extensions Unable to create file 'vscode-userdata:/home/nils/.vscode/extensions/extensions.json' that already exists when overwrite flag is not set
+2023-05-15 13:23:08.938 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/nils/.vscode/extensions

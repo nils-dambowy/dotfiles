@@ -1,0 +1,17 @@
+2023-05-15 15:03:14.709 [info] [Info  - 3:03:14 PM] (31242) Pylance language server 2023.5.20 (pyright 009aef31) starting
+2023-05-15 15:03:14.710 [info] [Info  - 3:03:14 PM] (31242) Server root directory: /home/nils/.vscode/extensions/ms-python.vscode-pylance-2023.5.20/dist
+2023-05-15 15:03:14.710 [info] [Info  - 3:03:14 PM] (31242) Starting service instance "Machine-Learning"
+2023-05-15 15:03:14.780 [info] [Info  - 3:03:14 PM] (31242) Setting pythonPath for service "Machine-Learning": "/bin/python"
+2023-05-15 15:03:14.781 [info] [Warn  - 3:03:14 PM] (31242) stubPath /home/nils/Documents/GitHub/Machine-Learning/typings is not a valid directory.
+2023-05-15 15:03:14.849 [info] [Info  - 3:03:14 PM] (31242) Assuming Python version 3.10
+2023-05-15 15:03:14.952 [info] [Info  - 3:03:14 PM] (31242) Found 1 source file
+2023-05-15 15:03:15.628 [info] [Info  - 3:03:15 PM] (31242) Background analysis(1) root directory: /home/nils/.vscode/extensions/ms-python.vscode-pylance-2023.5.20/dist
+2023-05-15 15:03:15.630 [info] [Info  - 3:03:15 PM] (31242) Background analysis(1) started
+2023-05-15 15:03:15.863 [info] [Info  - 3:03:15 PM] (31242) Indexer background runner(2) root directory: /home/nils/.vscode/extensions/ms-python.vscode-pylance-2023.5.20/dist (index)
+2023-05-15 15:03:15.863 [info] [Info  - 3:03:15 PM] (31242) Indexing(2) started
+2023-05-15 15:03:16.974 [info] [Info  - 3:03:16 PM] (31242) scanned(2) 259 files over 1 exec env
+2023-05-15 15:03:19.213 [info] [Info  - 3:03:19 PM] (31242) [BG(1)] Long operation: getSemanticTokens full at /home/nils/Documents/GitHub/Machine-Learning/sgd.py (3442ms)
+2023-05-15 15:03:21.647 [info] [Info  - 3:03:21 PM] (31242) [IDX(2)] Long operation: index execution environment /home/nils/Documents/GitHub/Machine-Learning (4521ms)
+2023-05-15 15:03:21.658 [info] [Info  - 3:03:21 PM] (31242) [IDX(2)] Long operation: index packages /home/nils/Documents/GitHub/Machine-Learning (4533ms)
+2023-05-15 15:03:21.658 [info] [Info  - 3:03:21 PM] (31242) indexed(2) 187 files over 1 exec env
+2023-05-15 15:03:21.687 [info] [Info  - 3:03:21 PM] (31242) Indexing finished(2).

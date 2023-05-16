@@ -1,0 +1,11 @@
+2023-05-16T11:36:51.702Z - info: [ui] [AppStore] loading 1 repositories from store
+2023-05-16T11:36:51.711Z - info: [ui] [AppStore] found account: nils-dambowy (Nils)
+2023-05-16T11:36:51.786Z - info: [ui] [BranchPruner] Last prune took place 23 hours ago - skipping
+2023-05-16T11:36:52.357Z - info: [ui] Subscribed 'nils-dambowy' to Alive channel
+2023-05-16T11:36:52.521Z - info: [ui] launching: 3.2.1-linux1 (Linux 6.1.26-1-MANJARO)
+2023-05-16T11:36:52.523Z - info: [ui] execPath: '/opt/github-desktop/github-desktop'
+2023-05-16T11:36:52.901Z - info: [ui] Stats reported.
+2023-05-16T11:37:13.380Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/nils-dambowy/dotfiles.git - nils-dambowy (has token)
+2023-05-16T11:37:14.331Z - info: [ui] [AppStore] adding repository at /home/nils/Documents/GitHub/dotfiles to store
+2023-05-16T11:37:14.725Z - info: [ui] [BranchPruner] Last prune took place 23 hours ago - skipping
+2023-05-16T11:37:15.486Z - info: [ui] [BranchPruner] No branches to prune.
