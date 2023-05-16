@@ -1,0 +1,28 @@
+2023-05-15 14:51:05.688 [info] [Info  - 2:51:05 PM] (21961) Pylance language server 2023.5.20 (pyright 009aef31) starting
+2023-05-15 14:51:05.688 [info] [Info  - 2:51:05 PM] (21961) Server root directory: /home/nils/.vscode/extensions/ms-python.vscode-pylance-2023.5.20/dist
+2023-05-15 14:51:05.716 [info] [Info  - 2:51:05 PM] (21961) Starting service instance "<default>"
+2023-05-15 14:51:05.731 [info] [Error - 2:51:05 PM] (21961) Error reading settings: Error: Request workspace/configuration failed with message: Not allowed to resolve environment in an untrusted workspace
+2023-05-15 14:51:05.774 [info] [Info  - 2:51:05 PM] (21961) No source files found.
+2023-05-15 14:51:05.835 [info] [Error - 2:51:05 PM] (21961) Error reading settings: Error: Request workspace/configuration failed with message: Not allowed to resolve environment in an untrusted workspace
+2023-05-15 14:51:05.870 [info] [Info  - 2:51:05 PM] (21961) No source files found.
+2023-05-15 14:51:06.175 [info] [Info  - 2:51:06 PM] (21961) Background analysis(1) root directory: /home/nils/.vscode/extensions/ms-python.vscode-pylance-2023.5.20/dist
+2023-05-15 14:51:06.178 [info] [Info  - 2:51:06 PM] (21961) Background analysis(1) started
+2023-05-15 14:52:19.337 [info] [Error - 2:52:19 PM] Sending notification python/workspaceTrusted failed.
+2023-05-15 14:52:19.337 [info] Error: Starting server failed
+	at S.$start (/home/nils/.vscode/extensions/ms-python.python-2023.8.0/out/client/extension.js:2:2049554)
+	at async S.sendNotification (/home/nils/.vscode/extensions/ms-python.python-2023.8.0/out/client/extension.js:2:2035521)
+2023-05-15 14:52:20.699 [info] [Info  - 2:52:20 PM] (21981) Pylance language server 2023.5.20 (pyright 009aef31) starting
+2023-05-15 14:52:20.699 [info] [Info  - 2:52:20 PM] (21981) Server root directory: /home/nils/.vscode/extensions/ms-python.vscode-pylance-2023.5.20/dist
+2023-05-15 14:52:20.725 [info] [Info  - 2:52:20 PM] (21981) Starting service instance "<default>"
+2023-05-15 14:52:20.824 [info] [Info  - 2:52:20 PM] (21981) Setting pythonPath for service "<default>": "/bin/python"
+2023-05-15 14:52:20.824 [info] [Warn  - 2:52:20 PM] (21981) stubPath typings is not a valid directory.
+2023-05-15 14:52:20.883 [info] [Info  - 2:52:20 PM] (21981) Assuming Python version 3.10
+2023-05-15 14:52:21.000 [info] [Info  - 2:52:21 PM] (21981) No source files found.
+2023-05-15 14:52:21.161 [info] [Info  - 2:52:21 PM] (21981) Setting pythonPath for service "<default>": "/bin/python"
+2023-05-15 14:52:21.162 [info] [Warn  - 2:52:21 PM] (21981) stubPath typings is not a valid directory.
+2023-05-15 14:52:21.294 [info] [Info  - 2:52:21 PM] (21981) Assuming Python version 3.10
+2023-05-15 14:52:21.628 [info] [Info  - 2:52:21 PM] (21981) No source files found.
+2023-05-15 14:52:22.701 [info] [Info  - 2:52:22 PM] (21981) Background analysis(1) root directory: /home/nils/.vscode/extensions/ms-python.vscode-pylance-2023.5.20/dist
+2023-05-15 14:52:22.701 [info] [Info  - 2:52:22 PM] (21981) Background analysis(1) started
+2023-05-15 14:52:25.618 [info] [Info  - 2:52:25 PM] (21981) [BG(1)] Long operation: checking: /home/nils/Machine-Learning/sgd.py (2405ms)
+2023-05-15 14:52:25.619 [info] [Info  - 2:52:25 PM] (21981) [BG(1)] Long operation: analyzing: /home/nils/Machine-Learning/sgd.py (3066ms)

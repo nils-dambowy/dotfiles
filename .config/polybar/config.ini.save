@@ -1,0 +1,85 @@
+[bar/mybar]
+
+scroll-up = "#i3.prev"
+scroll-down = "i3.next"
+module-margin = 4
+modules-center = date
+modules-left = text1 battery1 text2 battery2 i3
+modules-right = wired-network wireless-network
+
+[module/text1]
+type = custom/text
+content = External:
+
+[module/text2]
+type = custom/text
+content = Internal:
+
+[module/date]
+type = internal/date
+interval = 1.0
+date = %%{F#fafafa}%a %e %b %H:%M%%{F-}
+
+[module/i3]
+label-focused = %name%
+label-unfocused = %name%
+label-visible = %name%
+label-urgent = %name%
+type = internal/i3
+pin-workspaces =true
+strip-wsnumbers = true
+enable-click = true
+enable-scroll = false
+wrapping-scroll = false
+reverse-scroll =false
+fuzzy-match =true
+label-focused-foreground = #fbff00
+label-focused-background = #555555
+label-focused-padding = 0
+
+[module/battery1]
+type = internal/battery
+full-at = 99
+battery = BAT1
+adapter = ADP1
+poll-interval = 10
+
+[module/battery2]
+type = internal/battery
+full-at = 99
+battery = BAT0
+adapter = ADP1
+poll-interval = 10
+
+[module/wired-network]
+type = internal/network
+interface =enp0s31f6
+interval = 3.0
+accumulate-stats = true
+unknown-as-up = true
+format-connected = Connected: <label-connected>
+label-connected = %local_ip%
+format-connected-padding = 1
+format-disconnected =  <label-disconnected>
+label-disconnected = eth not connected
+
+[module/wireless-network]
+type = internal/network
+interface =wlp4s0
+interval = 3.0
+accumulate-stats = true
+unknown-as-up = true
+format-connected = <label-connected>
+label-connected = %essid% (%signal%)
+format-connected-padding = 1
+format-disconnected = <label-disconnected>
+label-disconnected = WiFi not connected
+ramp-signal-0 = 1
+ramp-signal-1 = 2
+ramp-signal-2 = 3
+ramp-signal-3 = 4
+ramp-signal-4 = 5
+
+[settings]
+screenchange-reload = true
+
