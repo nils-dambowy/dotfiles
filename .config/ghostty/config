@@ -1,0 +1,27 @@
+# Ghostty configuration. Reload with Cmd+Shift+, after editing.
+# All options: https://ghostty.org/docs/config/reference
+
+# Font
+font-family = JetBrainsMono Nerd Font
+
+# Colours: same palette as the Neovim theme (Monokai Pro, classic).
+# The background is pinned so terminal and editor match exactly.
+theme = Monokai Classic
+background = #272822
+
+# Background: slightly see-through, so the blur behind it is visible.
+# 1 = solid (no blur to see), lower = more see-through.
+# Changing background-opacity needs a full restart of Ghostty.
+background-opacity = 0.9
+background-blur = 20
+# Coloured cells are see-through too, so Neovim looks like the shell.
+background-opacity-cells = true
+
+# Window: titlebar in the background colour, some room around the text
+macos-titlebar-style = transparent
+window-padding-x = 12
+window-padding-y = 10
+window-padding-balance = true
+
+# Shell
+command = /opt/homebrew/bin/fish --login

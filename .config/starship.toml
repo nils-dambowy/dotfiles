@@ -1,0 +1,121 @@
+# Starship prompt: powerline segments (user, folder, git) in the colours of
+# the Neovim theme (Monokai Pro, classic). Needs a Nerd Font in the terminal.
+# Docs: https://starship.rs/config/
+
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# false = no empty line between the last output and the next prompt
+add_newline = false
+
+palette = 'monokai'
+
+format = """
+[╭─](grey)\
+$os$username$hostname[ ](bg:pink)[](fg:pink bg:blue)\
+$directory\
+$git_branch$git_status\
+$fill\
+$status$cmd_duration\
+$line_break\
+$character"""
+
+[palettes.monokai]
+dark = '#272822'
+light = '#fdfff1'
+pink = '#f92672'
+orange = '#fd971f'
+yellow = '#e6db74'
+green = '#a6e22e'
+blue = '#66d9ef'
+purple = '#ae81ff'
+grey = '#6e7066'
+
+# --- Segment 1: system icon and user name ---------------------------------
+
+[os]
+disabled = false
+style = 'fg:light bg:pink'
+format = '[ $symbol]($style)'
+
+[os.symbols]
+Macos = ''
+Debian = ''
+Ubuntu = ''
+Arch = ''
+
+[username]
+show_always = true
+style_user = 'bold fg:light bg:pink'
+style_root = 'bold fg:yellow bg:pink'
+format = '[ $user]($style)'
+
+# The host name only appears in an SSH session, as user@host.
+[hostname]
+ssh_only = true
+style = 'bold fg:light bg:pink'
+format = '[@$hostname]($style)'
+
+# --- Segment 2: folder ----------------------------------------------------
+
+# "format" is used outside a git repository and ends the bar after the folder.
+# "repo_root_format" is used inside one and leads into the green git segment.
+[directory]
+truncation_length = 3
+truncation_symbol = '…/'
+truncate_to_repo = false
+read_only = ' '
+style = 'fg:dark bg:blue'
+read_only_style = 'fg:dark bg:blue'
+before_repo_root_style = 'fg:dark bg:blue'
+repo_root_style = 'bold fg:dark bg:blue'
+format = '[  $path]($style)[$read_only]($read_only_style)[ ](bg:blue)[](fg:blue)'
+repo_root_format = '[  $before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style)[ ](bg:blue)[](fg:blue bg:green)'
+
+# --- Segment 3: git branch and status -------------------------------------
+
+[git_branch]
+symbol = ' '
+style = 'fg:dark bg:green'
+format = '[ $symbol $branch]($style)'
+
+# !2 modified, +1 staged, ?3 untracked, -1 deleted, *1 stashed, ↑1 ahead, ↓1 behind
+[git_status]
+style = 'fg:dark bg:green'
+format = '[$all_status$ahead_behind]($style)[ ](bg:green)[](fg:green)'
+conflicted = ' =${count}'
+stashed = ' *${count}'
+deleted = ' -${count}'
+renamed = ' »${count}'
+modified = ' !${count}'
+typechanged = ''
+staged = ' +${count}'
+untracked = ' ?${count}'
+ahead = ' ↑${count}'
+behind = ' ↓${count}'
+diverged = ' ↑${ahead_count}↓${behind_count}'
+
+# --- Right side of the first line: only when there is something to say -----
+
+[fill]
+symbol = ' '
+
+# Exit code of the last command, if it failed.
+[status]
+disabled = false
+symbol = '✗'
+style = 'bold pink'
+format = '[$symbol $status]($style) '
+
+# How long the last command took, if longer than two seconds.
+[cmd_duration]
+min_time = 2000
+style = 'yellow'
+format = '[$duration]($style)'
+
+# --- Second line -----------------------------------------------------------
+
+# The corner turns pink after a failed command.
+[character]
+success_symbol = '[╰─](grey)'
+error_symbol = '[╰─](pink)'
+vimcmd_symbol = '[╰─](green)'
