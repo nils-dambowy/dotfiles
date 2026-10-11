@@ -1,4 +1,5 @@
-# Starship prompt: powerline segments (user, folder, git) in the colours of
+# Starship prompt: powerline segments (user, folder, git) on the left, tags for
+# the kubectl context and tool versions on the right, in the colours of
 # the Neovim theme (Monokai Pro, classic). Needs a Nerd Font in the terminal.
 # Docs: https://starship.rs/config/
 
@@ -15,7 +16,7 @@ $os$username$hostname[ ](bg:pink)[](fg:pink bg:blue)\
 $directory\
 $git_branch$git_status\
 $fill\
-$status$cmd_duration\
+$status$cmd_duration$kubernetes$nodejs$golang$python\
 $line_break\
 $character"""
 
@@ -45,6 +46,8 @@ Arch = ''
 
 [username]
 show_always = true
+# Shown instead of the long account name.
+aliases = { nilsdambowy = 'nils' }
 style_user = 'bold fg:light bg:pink'
 style_root = 'bold fg:yellow bg:pink'
 format = '[ $user]($style)'
@@ -110,7 +113,33 @@ format = '[$symbol $status]($style) '
 [cmd_duration]
 min_time = 2000
 style = 'yellow'
-format = '[$duration]($style)'
+format = '[$duration]($style) '
+
+# The kubectl context that commands would currently go to (and the namespace,
+# if one is set). Hidden when there is no kubeconfig.
+[kubernetes]
+disabled = false
+symbol = '󱃾 '
+format = '[](fg:purple)[ $symbol$context( · $namespace) ](fg:dark bg:purple) '
+
+# Tool versions: each tag only appears in a folder that uses that tool
+# (package.json, go.mod, *.py, requirements.txt, pyproject.toml, ...).
+[nodejs]
+# Also recognise React files, so the tag shows inside src/ folders.
+detect_extensions = ['js', 'mjs', 'cjs', 'ts', 'mts', 'cts', 'jsx', 'tsx']
+symbol = ' '
+version_format = '${major}.${minor}'
+format = '[](fg:orange)[ $symbol$version ](fg:dark bg:orange) '
+
+[golang]
+symbol = ' '
+version_format = '${major}.${minor}'
+format = '[](fg:orange)[ $symbol$version ](fg:dark bg:orange) '
+
+[python]
+symbol = ' '
+version_format = '${major}.${minor}'
+format = '[](fg:orange)[ $symbol$version( \($virtualenv\)) ](fg:dark bg:orange) '
 
 # --- Second line -----------------------------------------------------------
 
